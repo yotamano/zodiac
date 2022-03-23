@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Zodiac</title>
+    <title>Unity WebGL Player | Zodiac</title>
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=768 height=1024 style="width: 768px; height: 1024px; background: #231F20"></canvas>
-    <script src="Build/01.loader.js"></script>
+    <script src="Build/WebGL Builds.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -18,9 +18,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/01.data.br",
-        frameworkUrl: "Build/01.framework.js.br",
-        codeUrl: "Build/01.wasm.br",
+        dataUrl: "Build/WebGL Builds.data.br",
+        frameworkUrl: "Build/WebGL Builds.framework.js.br",
+        codeUrl: "Build/WebGL Builds.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Yotam Mano",
         productName: "Zodiac",
